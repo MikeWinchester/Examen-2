@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "f4684b24-ed07-47d2-af3e-62c852e5bf62",
+		"name": "Examen-2-Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26299343"
+	},
+	"item": [
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Miguel\",\r\n    \"apellido\": \"Sanchez\",\r\n    \"fechaIngreso\": \"2023-04-06\",\r\n    \"tipoCliente\": {\r\n        \"descripcion\": \"Cliente Oro\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carwash/clientes/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carwash",
+						"clientes",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Tipo Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\": \"Cliente Platino\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carwash/tipos-cliente/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carwash",
+						"tipos-cliente",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Vehiculo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"Toyota\",\r\n    \"anio\": \"2022\",\r\n    \"disponible\": true,\r\n    \"tipo\":{\r\n        \"descripcion\": \"4en1\",\r\n        \"precioXHora\": 256.46\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carwash/vehiculos/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carwash",
+						"vehiculos",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Tipo Vehiculo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\": \"Todo terreno\",\r\n    \"precioXHora\": 234.46\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carwash/tipos-vehiculo/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carwash",
+						"tipos-vehiculo",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Clientes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Vehiculos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
